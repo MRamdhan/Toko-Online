@@ -21,10 +21,6 @@ Route::get('/detail/{produk}', [UserController::class, 'detail'])->name('pelangg
 Route::get('/login', [UserController::class, 'login'])->name('login');
 Route::post('postlogin', [UserController::class, 'postlogin'])->name('postLogin');
 
-// route::get('/registrasi','UserController@registrasi')->name('registrasi');
-// route::post('/postregistrasi','UserController@postregistrasi')->name('postregistrasi');
-// route::get('/produk','UserController@produk')->name('admin.produk');
-
 Route::get('/registrasi', [UserController::class, 'registrasi'])->name('registrasi');
 Route::post('/postregistrasi', [UserController::class, 'postregistrasi'])->name('postregistrasi');
 Route::get('/produk', [UserController::class, 'produk'])->name('admin.produk');

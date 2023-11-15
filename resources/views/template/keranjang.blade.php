@@ -11,8 +11,10 @@
     <div class="container mt-5">
         <h5> Keranjang </h5>
         <hr>
-        @if (Session::has('status'))
-        <div> <span style="color: red">{{Session::get('status')}}</span> </div>
+         @if (session('status'))
+             <div class="alert alert-success">
+                {{ session('status') }}
+             </div>
          @endif
         @foreach ($detailtransaksi as $item)
         <div class="card mt-3">

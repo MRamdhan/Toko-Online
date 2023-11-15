@@ -13,6 +13,11 @@
     <div class="container mt-5">
         <h5> Summary </h5>
         <hr>
+        @if (session('status'))
+            <div class="alert alert-success">
+                {{ session('status') }}
+            </div>
+        @endif
         @foreach($detailtransaksi as $item)
         <div class="card mt-3">
             <div class="row">

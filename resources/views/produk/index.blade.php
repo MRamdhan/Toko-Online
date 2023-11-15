@@ -17,7 +17,10 @@
             {{ session('status') }}
         </div>
         @endif
-        <a href="{{ route('admin.tampiltambahproduk') }}" class="btn btn-primary"> Tambah </a>
+        <div class="container mt-5">
+            <h3> Zeknologiyy </h3>
+            <a href="{{ route('admin.tampiltambahproduk') }}" class="btn btn-success"> Tambah </a>
+        </div>
         <table class="table table-responsive-sm mt3">
             <thead>
                 <tr>
